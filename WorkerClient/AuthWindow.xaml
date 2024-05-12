@@ -1,0 +1,30 @@
+﻿<Window x:Class="WorkerClient.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkerClient"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Авторизация" Height="400" Width="400" >
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Width="200">
+            <TextBlock>Login</TextBlock>
+            <TextBox x:Name="LoginTextBox" />
+            <TextBlock Margin="0 10 0 0">Password</TextBlock>
+            <PasswordBox x:Name="PasswordBox" />
+            <Button x:Name="Login_Btn"  Content="Войти" Click="Login_Btn_Click" Margin="0 10 0 0"/>
+            <TextBox Margin="0 20 0 0" Text="Login:  Mechta1 Password:  testpass1" BorderThickness="0" Background="Transparent"
+         IsReadOnly="True" TextWrapping="Wrap" />
+            <TextBox Text="Login:  Mechta2 Password:  testpass2" BorderThickness="0" Background="Transparent"
+         IsReadOnly="True" TextWrapping="Wrap" />
+            <TextBox Text="Login:  Mechta3 Password:  testpass3" BorderThickness="0" Background="Transparent"
+         IsReadOnly="True" TextWrapping="Wrap" />
+
+            <Button x:Name="User1_Data_Btn" Click="User1_Data_Btn_Click">Войти под первым пользователем</Button>
+            <Button x:Name="User2_Data_Btn" Click="User2_Data_Btn_Click">Войти под вторым пользователем</Button>
+            <Button x:Name="User3_Data_Btn" Click="User3_Data_Btn_Click">Войти под третьим пользователем</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
